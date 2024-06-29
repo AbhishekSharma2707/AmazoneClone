@@ -1,0 +1,51 @@
+
+<div class="bootstrap-wrapper" >
+    <div class="container">
+        <div class="row" >
+            <div class="col-md-6 offset-md-3">
+
+                <mat-card >
+                <div class="container text-center">
+                    <!-- <img src="../.../../assets/signup.png" alt=""> -->
+                    <img src="../.../../assets/images/developer.png" alt="">
+                </div>
+
+                <h1 class="text-center">Login Here!!</h1>
+                <form>
+                    <!-- Username field -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input required
+                        [(ngModel)]="user.username" name="username"
+                        matInput placeholder="Enter Your Username">
+                        
+                      </mat-form-field>
+                    
+                    <!-- Password field -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input required
+                        [(ngModel)]="user.password" name="password"
+                        type="password" matInput placeholder="Enter Your Password"> 
+                        </mat-form-field>
+                        
+            
+                    <div class="container text-center">
+                        <!-- <button type="submit" mat-raised-button color="primary">Register</button>
+                        <button class="ml10" mat-raised-button coloton> -->
+                        <!-- <input type="button" style="background: blue;" mat-raised-button color="primary" value="Register" (click)="saveToDB()"> -->
+                        <input type="button" style="background: rgb(255, 0, 212); border: none; font-size: large; color: white;" mat-raised-button color="primary" value="LOGIN" (click)="validate()">
+                        
+                        <br><br>
+                        <p> New to AMAZON  Please <a href="http://localhost:4200/register"> REGISTER </a></p>
+                        <br><br>
+                    </div>
+                    <span style="color: brown;font-size: large;">{{message}}</span>
+
+                    </form>
+            </mat-card>
+        
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" >
+            <div class="col-md-6 offset-md-3">
+              <mat-card>
+                <div class="container text-center">
+                    <img src="../.../../assets/images/developer.png" alt="">
+                </div>
+
+                <h1 class="text-center">Add New Product!</h1>
+                <!-- {{product | json}} -->
+                <form>
+
+                  
+                    <!-- productId: <input required [(ngModel)]="product.productId" name="productId" type="number"  placeholder="Enter Your productId"> <br> <br> -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>productId</mat-label>
+                        <input [(ngModel)]="product.productId" name="productId" type="number" matInput placeholder="Enter Your productId">
+                        <mat-hint>User ID must be unique</mat-hint>
+                      </mat-form-field>
+
+                    <!-- productName: <input required [(ngModel)]="product.productName" name="productName" type="text" placeholder="Enter Your productName"> <br> <br> -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>productName</mat-label>
+                        <input [(ngModel)]="product.productName" name="productName" type="text" matInput placeholder="Enter Your productName">                        
+                      </mat-form-field>
+
+                    <!-- productPrice: <input required [(ngModel)]="product.productPrice" name="productPrice" type="number" placeholder="Enter Your Price">  <br> <br> -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Product Price</mat-label>
+                        <input [(ngModel)]="product.productPrice" name="productPrice" type="number" matInput placeholder="Enter Your Price">                        
+                      </mat-form-field>
+
+
+                      <!-- productIMG: <input required [(ngModel)]="product.img" name="img" type="text" placeholder="Enter Your productimg"> -->
+                        <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>productIMG</mat-label>
+                        <input [(ngModel)]="product.img" name="img" type="text" matInput placeholder="Enter Your productimg">
+                        <!-- <input [(ngModel)]="product.img" name="img" type="file" matInput  rows="4" accept="images" placeholder="Enter Your productimg"> -->
+                      </mat-form-field>
+
+                      <!-- productPrice: <input required [(ngModel)]="product.productQuantity" name="productQuantity" type="number" placeholder="Enter Quantity">  <br> <br> -->
+                    <mat-form-field class="full-width" appearance="outline">
+                      <mat-label>Product Quantity</mat-label>
+                      <input [(ngModel)]="product.productQuantity" name="productQuantity" type="number" matInput placeholder="Enter Quantity">                        
+                    </mat-form-field>
+
+                     
+                      <!-- INFO: <input required [(ngModel)]="product.productInfo" name="productInfo" type="text" placeholder="Enter Your INFO">   -->
+                        <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Info</mat-label>
+                        <input [(ngModel)]="product.productInfo" name="productInfo" type="text" matInput placeholder="Enter Your INFO">                       
+                      </mat-form-field>
+
+
+                 
+                      <div class="container text-center">
+                        <!-- <button type="submit" mat-raised-button color="primary">Register</button>
+                        <button class="ml10" mat-raised-button color="accent">Clear</button> -->
+                        <input class="button" type="button" style="background: blue; border: none; font-size: large;" mat-raised-button color="primary" value="Save Product" (click)="addProducts()">
+                        <br><br>
+                      </div>
+
+                      <div class="container text-center">
+                        <!-- <button type="submit" mat-raised-button color="primary">Register</button>
+                        <button class="ml10" mat-raised-button color="accent">Clear</button> -->
+                        <input class="button" type="button" style="background: blue; border: none; font-size: large;" mat-raised-button color="primary" value="View Product" (click)="viewProduct()">
+                        <br><br>
+                      </div>
+
+                      <div class="container text-center">
+                        <!-- <button type="submit" mat-raised-button color="primary">Register</button>
+                        <button class="ml10" mat-raised-button color="accent">Clear</button> -->
+                        <input class="button" type="button" style="background: blue; border: none; font-size: large;" mat-raised-button color="primary" value="update Product" (click)="updateProduct()">
+                        <br><br>
+                      </div>
+
+                      <div class="container text-center">
+                        <!-- <button type="submit" mat-raised-button color="primary">Register</button>
+                        <button class="ml10" mat-raised-button color="accent">Clear</button> -->
+                        <input class="button" type="button" style="background: blue; border: none; font-size: large;" mat-raised-button color="primary" value="delete Product" (click)="deleteProduct()">
+                        <br><br>
+                      </div>
+                      
+                      <br><br>
+                    </form>
+                  </mat-card>
+                </div>
+                {{message}}
+        </div>
+    </div>
+</div>
+

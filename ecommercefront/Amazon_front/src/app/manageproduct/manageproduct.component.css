@@ -1,0 +1,38 @@
+img{
+    height: 100px;
+    width: 100px;
+}
+.full-width{
+    width: 100%;
+}
+
+select{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+p{
+    color: black;
+    font-size: medium;
+
+}
+span{
+    text-align: center;
+}
+.product-form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    width: 100%;
+  }

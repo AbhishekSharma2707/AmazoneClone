@@ -1,0 +1,22 @@
+
+.full-width{
+    width: 100%;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+p{
+    color: black;
+    font-size: medium;
+
+}
+.button{
+
+
+
+    border-radius: 20px;
+    font-size: medium;
+    /* border: 2x solid black; */
+    
+}

@@ -1,0 +1,19 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  a{
+    color: white;
+    text-decoration:none ;
+  }
+  /* src/styles.css */
+
+mat-toolbar {
+  background-color: #232F3E !important; /* Amazon navigation bar color */
+  color: white;
+}
+.logo{
+  background-image: url("/assets/images/amazon_logo.png");
+  background-size: cover;
+  height: 50px;
+  width: 100px;
+}

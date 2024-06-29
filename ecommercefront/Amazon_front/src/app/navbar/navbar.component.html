@@ -1,0 +1,40 @@
+<!-- <p>This is a navbar</p> -->
+<mat-toolbar color="accent">
+
+ 
+
+    <a 
+    routerLink="/"
+    mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+
+    </a>
+    <span class="logo"> <a href="http://localhost:4200/"></a></span>
+    <span class="example-spacer"></span>
+
+    <a
+    [routerLink]="'/cart'"
+    mat-icon-button class="example-icon favorite-icon mr20 ml20" aria-label="Example icon-button with heart icon">
+    Cart
+    </a>
+    
+    <a
+    [routerLink]="'/login'"
+    mat-icon-button class="example-icon favorite-icon mr20 ml20 " aria-label="Example icon-button with heart icon">
+      Login
+    </a>
+    <a
+    [routerLink]="'/register'"
+    mat-icon-button class="example-icon favorite-icon mr20 ml20" aria-label="Example icon-button with heart icon">
+      Register
+    </a>
+    <a
+    [routerLink]="'/adminlogin'"
+    mat-icon-button class="example-icon favorite-icon mr20 ml20" aria-label="Example icon-button with heart icon">
+    Admin Login
+    </a>
+    
+   
+  </mat-toolbar>
+  
+
